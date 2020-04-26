@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/CSSRulePlugin.js"></script>
+</head>
+
+<body>
+  <div class="page mb-5" id="landing-page">
+    <h1 id="landing-h1"><span>Hey</span> <span>There!</span> <span>My</span> <span>name</span> <span>is</span>
+      <span>PHEAP</span> <span>Long</span> </h1>
+    <p id="landing-p">A self taught Developer</p>
+  </div>
+  <div class="container">
+    <div class="page" id="about-page">
+      <p class="section">About Me</p>
+      <div class="content">
+        <div class="about-para ">
+          <p id="whoami">Who's this guy?</p>
+          <section class="">
+            <p class="p-about">His name is Pheap Long, A 22 years old Cambodia and also a Fourth Year Student at Phnom
+              Penh International University</p>
+            <p class="p-about">He like to spend his time coding infront of computer on holiday</p>
+            <p class="p-about">If he dint, It mean he's acquiring new knowledge via Udemy</p>
+            <p class="p-about">Currently i’m interested in learning the MERN Stack</p>
+        </div>
+        <div class="imgOval"></div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="half-page">
+    <div class="container">
+      <p class="section">Skills</p>
+      <div id="skill-content">
+        <div><span id="span-tittle">LANGUAGES</span>
+          <span>C#</span>
+          <span>SQL</span>
+          <span>Javascript(ES6)</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+        </div>
+        <div><span id="span-tittle">FRAMEWORKS</span>
+          <span>ASP.NET</span>
+          <span>Entity Framework</span>
+          <span>ReactJs</span>
+          <span>ExpressJs</span>
+          <span>Nodejs</span>
+        </div>
+        <div><span id="span-tittle">TOOLS</span>
+          <span>MSSQL</span>
+          <span>ORACLE 12c</span>
+          <span>Postman</span>
+          <span>Chrome Dev Tool</span>
+          <span>Vim</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page" id="half-page">
+    <div class="container">
+      <p class="section">Experiences</p>
+      <div id="skill-content">
+        <div><span id="span-tittle">COMPANY'S NAME</span>
+          <span>Forval KH</span>
+          <span>BNKC MFI</span>
+        </div>
+        <div><span id="span-tittle">POSITION</span>
+          <span>Intership C# Developer</span>
+          <span>IT Programmer</span>
+        </div>
+        <div><span id="span-tittle">PERIOD</span>
+          <span>July-September 2019</span>
+          <span>October 2019 - Present</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page" id="course-page">
+      <p class="section">Course</p>
+      <p>Here is a few course that long has taken</p>
+      <div class="content">
+        <div class="card">
+          <img class="card-img-top" src="./img/bootcamp.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">The Web Developer Bootcamp &nbsp;</h5>
+            <p class="card-text">TThe only course you need to learn web development - HTML, CSS, JS, Node, and More!</p>
+            <p class="card-text"><a class="btn btn-primary" target="_blank"
+                href="https://www.udemy.com/course/the-web-developer-bootcamp/">Learn More</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./img/mernStack.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">MERN Stack Front To Back: Full Stack React, Redux & Node.js</h5>
+            <p class="card-text">Build and deploy a social network with Node.js, Express, React, Redux & MongoDB</p>
+            <p class="card-text"><a class="btn btn-primary" target="_blank"
+                href="https://www.udemy.com/course/mern-stack-front-to-back/">Learn More</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./img/ef.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Entity Framework in Depth: The Complete Guide</h5>
+            <p class="card-text">Connect your applications to a SQL Server database</p>
+            <p class="card-text"><a class="btn btn-primary" target="_blank"
+                href="https://www.udemy.com/course/entity-framework-tutorial/">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SCROLL MAGIC -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="script/app.js">
+  </script>
+  <!-- <script>
+    var rule = CSSRulePlugin.getRule('span::after')
+    gsap.to(rule, { cssRule: { scaleY: 0 }, duration: 0.8 })
+    gsap.from('#landing-h1', { duration: 1, opacity: 0, y: -100 })
+    gsap.from('#landing-p', { duration: 1, opacity: 0, y: 100, delay: 0.5 })
+    var tl = gsap.timeline({ defaults: { duraition: 0.8, opacity: 0 } });
+    tl.from('.section', { x: -50, ease: 'power1' })
+      .from('#whoami', { y: -50, y: 20, ease: 'power2' })
+      .from('.p-about', { y: 100, ease: 'power1', stagger: 0.1 })
+      .from('.imgOval', { duraition: 1.3, y: -150, ease: 'power1' })
+      .to('.about-para', { duration: 0.4, y: -40, opacity: 80 }, "-=0.2")
+  </script> -->
+  <!-- <script src="./script/app.js"></script> -->
+</body>
+
+</html>

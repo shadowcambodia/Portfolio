@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+  height: 100vh;
+  color: #39A0ED;
+}
+
+.page .section {
+  color: #39A0ED;
+  font-size: 2rem;
+}
+
+#about-page .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  height: 100%;
+}
+
+#about-page .content .about-para {
+  padding-left: 2rem;
+  margin-top: 15%;
+  opacity: 0.8;
+}
+
+#about-page .content .about-para #whoami {
+  font-size: 2.5rem;
+  color: #3C91E6;
+}
+
+#about-page .content .about-para section {
+  padding-left: 1.5rem;
+}
+
+#about-page .content .about-para section p {
+  margin: 0;
+}
+
+#about-page .content .imgOval {
+  border-radius: 50%;
+  width: 390px;
+  height: 450px;
+  background-image: url("../img/self.jpg");
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+#landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../img/lading.jpeg");
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+#landing-page h1, #landing-page p {
+  color: white;
+  z-index: 100;
+}
+
+#landing-page h1 {
+  font-size: 4.5vw;
+  z-index: 101;
+}
+
+#landing-page p {
+  font-size: 2.4vw;
+  color: #E5E5E6;
+}
+
+#landing-page::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#014e673b), color-stop(60%, #39a0ed40), to(#3c91e678));
+  background-image: linear-gradient(to right bottom, #014e673b 0%, #39a0ed40 60%, #3c91e678 100%);
+}
+
+span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #3C91E6;
+}
+
+#half-page {
+  padding-top: 2rem;
+  height: 50vh;
+  background-color: #014E67;
+}
+
+#half-page #skill-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+#half-page #skill-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+}
+
+#half-page #skill-content div span {
+  font-size: 1rem;
+  color: #C8C8C8;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#half-page #skill-content div span:hover {
+  color: #fff;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+#half-page #skill-content div #span-tittle {
+  font-size: 1.2rem;
+  color: #FBF6F6;
+}
+
+#course-page .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.card {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.card img {
+  size: 400px 500px;
+}
+
+.card .card-body {
+  height: 250px;
+  position: relative;
+}
+
+.card .card-body a {
+  width: 32%;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card:hover, .card :focus {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(2deg);
+          transform: scale(1) rotate(2deg);
+  -webkit-box-shadow: 2px 0px 8px rgba(50, 111, 140, 0.5), -2px 0px 8px rgba(50, 111, 140, 0.5);
+          box-shadow: 2px 0px 8px rgba(50, 111, 140, 0.5), -2px 0px 8px rgba(50, 111, 140, 0.5);
+}
+
+.card:focus ~ .card, .card:hover ~ .card {
+  opacity: 0.8;
+  -webkit-transform: scale(0.9) rotate(-2deg);
+          transform: scale(0.9) rotate(-2deg);
+}
+/*# sourceMappingURL=style.css.map */
